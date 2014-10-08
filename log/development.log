@@ -1669,3 +1669,341 @@ Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2013-07-29 19:17:09 -070
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-29 19:17:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-06 21:11:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TrailsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /Users/tidydee/code/rails/bctrails/app/controllers/trails_controller.rb:6)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/tidydee/code/rails/bctrails/app/controllers/trails_controller.rb:6)
+  [1m[35mTrail Load (0.1ms)[0m  SELECT "trails".* FROM "trails"
+  Rendered trails/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 370ms (Views: 331.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:11:44 -0700
+
+
+Started GET "/trails/1" for 127.0.0.1 at 2014-10-06 21:12:00 -0700
+Processing by TrailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrail Load (0.2ms)[0m  SELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /Users/tidydee/.rvm/gems/ruby-2.1.0/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (2.6ms)
+  Rendered trails/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trails/1" for 127.0.0.1 at 2014-10-06 21:12:00 -0700
+Processing by TrailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrail Load (0.1ms)[0m  [1mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered /Users/tidydee/.rvm/gems/ruby-2.1.0/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (2.4ms)
+  Rendered trails/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:12:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:00 -0700
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-06 21:12:11 -0700
+Processing by TrailsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /Users/tidydee/code/rails/bctrails/app/controllers/trails_controller.rb:6)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/tidydee/code/rails/bctrails/app/controllers/trails_controller.rb:6)
+  [1m[35mTrail Load (0.2ms)[0m  SELECT "trails".* FROM "trails"
+  Rendered trails/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:12:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:11 -0700
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:11 -0700
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-06 21:12:16 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/tidydee/.rvm/gems/ruby-2.1.0/gems/devise-3.0.0/app/views/devise/shared/_links.erb (1.2ms)
+  Rendered /Users/tidydee/.rvm/gems/ruby-2.1.0/gems/devise-3.0.0/app/views/devise/sessions/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-06 21:12:16 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/tidydee/.rvm/gems/ruby-2.1.0/gems/devise-3.0.0/app/views/devise/shared/_links.erb (0.3ms)
+  Rendered /Users/tidydee/.rvm/gems/ruby-2.1.0/gems/devise-3.0.0/app/views/devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:12:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:16 -0700
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:16 -0700
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-10-06 21:12:28 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wZIlQURTcVl6y0axNNC92AMyg39SSO1yF6ycz77BA0Q=", "user"=>{"email"=>"dawidspamer@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'dawidspamer@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.7ms)[0m  [1mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["remember_created_at", Tue, 07 Oct 2014 04:12:28 UTC +00:00], ["updated_at", Tue, 07 Oct 2014 04:12:28 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Tue, 30 Jul 2013 01:34:27 UTC +00:00], ["current_sign_in_at", Tue, 07 Oct 2014 04:12:28 UTC +00:00], ["sign_in_count", 4], ["updated_at", Tue, 07 Oct 2014 04:12:28 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 135ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-06 21:12:28 -0700
+Processing by TrailsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /Users/tidydee/code/rails/bctrails/app/controllers/trails_controller.rb:6)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/tidydee/code/rails/bctrails/app/controllers/trails_controller.rb:6)
+  [1m[35mTrail Load (0.2ms)[0m  SELECT "trails".* FROM "trails"
+  Rendered trails/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:12:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:28 -0700
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:28 -0700
+
+
+Started GET "/trails/1" for 127.0.0.1 at 2014-10-06 21:12:33 -0700
+Processing by TrailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrail Load (0.1ms)[0m  SELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /Users/tidydee/.rvm/gems/ruby-2.1.0/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (1.8ms)
+  Rendered trails/show.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trails/1" for 127.0.0.1 at 2014-10-06 21:12:33 -0700
+Processing by TrailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrail Load (0.1ms)[0m  SELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /Users/tidydee/.rvm/gems/ruby-2.1.0/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (2.0ms)
+  Rendered trails/show.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:12:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:33 -0700
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:33 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-06 21:12:40 -0700
+Processing by TrailsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /Users/tidydee/code/rails/bctrails/app/controllers/trails_controller.rb:6)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/tidydee/code/rails/bctrails/app/controllers/trails_controller.rb:6)
+  [1m[35mTrail Load (0.2ms)[0m  SELECT "trails".* FROM "trails"
+  Rendered trails/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:12:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:40 -0700
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:12:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+Processing by TrailsController#index as HTML
+  [1m[35mTrail Load (0.1ms)[0m  SELECT "trails".* FROM "trails"
+  Rendered trails/index.html.erb within layouts/application (22.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 61ms (Views: 56.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+Processing by TrailsController#index as HTML
+  [1m[35mTrail Load (0.2ms)[0m  SELECT "trails".* FROM "trails"
+  Rendered trails/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:41:30 -0700
